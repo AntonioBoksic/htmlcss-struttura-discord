@@ -35,12 +35,27 @@ main {
 } 
 
 section {
-    height: 50px;
+    height: 90px;
     border: 1px solid black;
     background-color: chocolate;
     display: flex;
 }
 
+section:nth-child(2) .sezione.immagine {
+    background-color: rgb(131, 122, 122);
+    order: +1;
+}
+
+section:nth-child(4) {
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+section:nth-child(4) .sezione.immagine {
+    order: +1;
+   
+}
 
 
 .footer.grande {
