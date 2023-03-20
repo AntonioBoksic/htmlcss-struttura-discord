@@ -5,13 +5,23 @@ body {
     box-sizing: content-box;
 }
 
+/* header  */
 
 header {
+    max-width: 1080px;
+    margin: 0;
+    margin: auto;
     background-color: #255ee9;
+}
+
+.header-container {
+    width:90%;
+    margin: 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;/*  non capisco eprchè non mi allinea il logo al centro  */
+    align-items: center;/*  non capisco eprchè non mi allinea il logo al centro  */
 }
 
 ul {
@@ -19,26 +29,60 @@ ul {
     list-style: none;
 }
 
+/* jumbotron */
+
 .jumbotron {
-    
+
+    max-width: 1080px;
+    margin: 0;
+    margin: auto;
     background-color: aquamarine;
     text-align: center;
+}
+
+.jumbotron-container {
+    width:90%;
+    margin: 0;
+    margin: auto;
 }
 
 h1 {
     margin-top: 0;
 }
 
+/* main  */
+
 main {
+    
+    max-width: 1080px;
+    margin: 0;
+    margin: auto;
+    background-color: darksalmon;
+} 
+
+.main-container {
+    width:90%;
+    margin: 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
-} 
+}
 
 section {
     height: 100px;
     border: 1px solid black;
     background-color: chocolate;
     display: flex;
+}
+
+.sezione.immagine {
+    width: 50%;  
+    border: 2px solid black;
+}
+
+.sezione.testo {
+    width: 50%;  
+    border: 2px solid black;
 }
 
 section:nth-child(2) .sezione.immagine {
@@ -49,12 +93,17 @@ section:nth-child(2) .sezione.immagine {
 section:nth-child(4) {
     text-align: center;
     flex-direction: column;
-   
 }
 
 section:nth-child(4) .sezione.immagine {
     order: +1;
-   
+    width: 100%;
+    height:50%
+}
+
+section:nth-child(4) .sezione.testo {
+    width: 100%;
+    height: 50%;
 }
 
 section:nth-child(5) {
@@ -63,21 +112,39 @@ section:nth-child(5) {
    
 }
 
+section:nth-child(5) .sezione.testo {
+    width: 100%;
+    height: 50%;
+}
+
+/* footer */
+footer{
+    max-width: 1080px;
+    margin: auto;
+    background-color: #23272a;
+}
+
+.footer-container {
+    width:90%;
+    margin: 0;
+    margin: auto;
+}
 
 .footer.grande {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
 
-    background-color: grey;
+.divisore {
+    background-color: #7289da;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .footer.piccolo {
-    margin-left: 20px;
-    margin-right: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: greenyellow;
-    border-top: 1px solid rgb(232, 88, 210);
 }
 
 
@@ -86,10 +153,9 @@ section:nth-child(5) {
 /* debug */
 
 
-.sezione.immagine {
-    width: 100%;  /* non capisco perchè con width 50% non mi imposta la larghezza pari a metà contenitore/riga */
-    border: 2px solid black;
-}
+
+
+
 
 .footer.colonna {
     width: 100px;
