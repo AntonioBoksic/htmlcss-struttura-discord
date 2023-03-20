@@ -1,0 +1,60 @@
+/* general */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+header {
+    background-color: #255ee9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;/*  non capisco eprchè non mi allinea il logo al centro  */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.jumbotron {
+    
+    background-color: aquamarine;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+} 
+
+section {
+    height: 50px;
+    border: 1px solid black;
+    background-color: chocolate;
+    display: flex;
+}
+
+
+
+.footer.grande {
+
+    background-color: grey;
+}
+
+.footer.piccolo {
+
+    background-color: grey;
+}
+
+/* debug */
+.sezione.immagine {
+    width: 100%;  /* non capisco perchè con width 50% non mi imposta la larghezza pari a metà contenitore/riga */
+    border: 1px solid black;
+}
