@@ -2,15 +2,12 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 /* header  */
 
 header {
-    max-width: 1080px;
-    margin: 0;
-    margin: auto;
     background-color: #255ee9;
 }
 
@@ -20,7 +17,7 @@ header {
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;/*  non capisco eprchè non mi allinea il logo al centro  */
 }
 
@@ -32,17 +29,12 @@ ul {
 /* jumbotron */
 
 .jumbotron {
-
-    max-width: 1080px;
-    margin: 0;
-    margin: auto;
     background-color: aquamarine;
     text-align: center;
 }
 
 .jumbotron-container {
     width:90%;
-    margin: 0;
     margin: auto;
 }
 
@@ -52,24 +44,25 @@ h1 {
 
 /* main  */
 
-main {
-    
-    max-width: 1080px;
-    margin: 0;
-    margin: auto;
-    background-color: darksalmon;
-} 
 
-.main-container {
-    width:90%;
-    margin: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+.section-container.white {
+    background-color: white;
 }
 
+.section-container.grey {
+    background-color: grey;
+}
+
+.item.bg-grey.column {
+    display: block;
+    text-align: center;
+}
+
+
 section {
-    height: 100px;
+    width: 90%;
+    margin: auto;
+    height: 200px;
     border: 1px solid black;
     background-color: chocolate;
     display: flex;
@@ -85,6 +78,16 @@ section {
     border: 2px solid black;
 }
 
+.item.bg-grey.column .sezione.immagine {
+    width:100%;
+    height:25%;
+}
+
+.item.bg-grey.column .sezione.testo {
+     width:100%;
+    height:25%;
+}
+
 section:nth-child(2) .sezione.immagine {
     background-color: rgb(131, 122, 122);
     order: +1;
@@ -92,41 +95,26 @@ section:nth-child(2) .sezione.immagine {
 
 section:nth-child(4) {
     text-align: center;
-    flex-direction: column;
 }
 
 section:nth-child(4) .sezione.immagine {
-    order: +1;
     width: 100%;
-    height:50%
+    height:25%%
 }
 
 section:nth-child(4) .sezione.testo {
     width: 100%;
-    height: 50%;
-}
-
-section:nth-child(5) {
-    text-align: center;
-    flex-direction: column;
-   
-}
-
-section:nth-child(5) .sezione.testo {
-    width: 100%;
-    height: 50%;
+    height: 25%;
 }
 
 /* footer */
 footer{
-    max-width: 1080px;
     margin: auto;
     background-color: #23272a;
 }
 
 .footer-container {
     width:90%;
-    margin: 0;
     margin: auto;
 }
 
@@ -135,31 +123,25 @@ footer{
     justify-content: space-between;
 }
 
-.divisore {
-    background-color: #7289da;
-    height: 1px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.colonna {
+    height:100px;
+    border: 1px solid red;
+    background-color: aqua;
 }
+
+.colonna.grande {
+    width: 40%;
+}
+
+.colonna.piccola {
+    width: 20%;
+}
+
 
 .footer.piccolo {
     display: flex;
     justify-content: space-between;
-}
-
-
-
-
-/* debug */
-
-
-
-
-
-
-.footer.colonna {
-    width: 100px;
-    height:100px;
-    border: 1px solid red;
-    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #7289da;
 }
